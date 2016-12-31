@@ -9,7 +9,9 @@ do
       do
         local _with_0 = love.graphics
         _with_0.setColor(255, 255, 255)
-        _with_0.rectangle("fill", self.act_x, self.act_y, 16, 16)
+        _with_0.rectangle("fill", self.act_x + 16, self.act_y + 16, 16, 16)
+        _with_0.setColor(255, 0, 0)
+        _with_0.print(tostring(self.x / game.grid_size) .. ", " .. tostring(self.y / game.grid_size), self.x, self.y)
         return _with_0
       end
     end

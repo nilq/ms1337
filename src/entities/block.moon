@@ -13,4 +13,4 @@ class
   draw: =>
     with love.graphics
       .setColor 255, 255, 255
-      .rectangle "fill", @act_x, @act_y, 16, 16
+      .rectangle "fill", @act_x + 16, @act_y + 16, 16, 16
